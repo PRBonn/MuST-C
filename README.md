@@ -38,6 +38,6 @@ To reproduce the graphs in our paper, we provide the relevant [scripts here](plo
 ## Code Release
 We also provide some scripts we used in the development of our data set:
 * [scripts to extract LAI from a sequence of images here](md_Destructive_LAI)
-* [script(s) to obtain multispectral reflectance from **UAV3-MS**](UAV-MS)
+* [script(s) to obtain multispectral reflectance from **UAV3-MS**](UAV3-MS)
 
 
