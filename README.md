@@ -3,7 +3,7 @@
 
 [**Website**](https://www.ipb.uni-bonn.de/data/MuST-C/) **|** [**Data Repo**](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd)
 
-![MuST-C](assets/motivation2.png "MuST-C")
+![MuST-C](https://github.com/user-attachments/assets/29f64697-294b-4087-9851-642c491566c6)
 This repo contains code pertaining to the data set MuST-C, a mutli-sensor, multi-temporal and multiple crop dataset, consisting of data from sensors:   
 * High resolution RGB camera
 * Multispectral cameras (10 bands)
@@ -25,7 +25,7 @@ You can download parts of the dataset using the project [website](https://www.ip
 or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd).
 To use this code base, download the dataset into your desired $PARENT_DIR, while maintain the directory structure from the downloaded files:
 
-![dir_struct](assets/folder_structure.png)
+![dir_struct](https://github.com/user-attachments/assets/f868e8c7-c971-4882-9475-f7b44d3a1e99)
 
 
 ## Developers Kit
