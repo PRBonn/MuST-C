@@ -1,0 +1,9 @@
+Package,Type
+UAV1-RGB,raster
+UAV2-RGB,raster
+UAV3-RGB,raster
+UAV3-MS,raster
+UAV1-RGB,pointcloud
+UAV2-Lidar,pointcloud
+UGV-LMI,pointcloud
+UGV-Ouster,pointcloud

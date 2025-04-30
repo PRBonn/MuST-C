@@ -1,0 +1,51 @@
+calib_fp: ./data/calibration.yaml
+cfg_dict:
+  calib_txt: ./data/calib.txt
+  calib_yaml: ./data/calibration.yaml
+  data_folder: data/leaves
+  debug: false
+  is_vis: true
+  output_folder: ./
+  tracker_cfg: ./data/tracker_hyps.cfg
+  vm_dir: ./data/vis_vm/labeller/semantics
+debug: false
+is_vis: true
+output_csv_fp: ./la.csv
+pics_dir_fp: data/leaves
+scale_calib_fp: ./data/calib.txt
+tracker_cfg_fp: ./data/tracker_hyps.cfg
+vm_dir: ./data/vis_vm/labeller/semantics
+calib_fp: ./data/calibration.yaml
+cfg_dict:
+  calib_txt: ./data/calib.txt
+  calib_yaml: ./data/calibration.yaml
+  data_folder: data/leaves
+  debug: false
+  is_vis: true
+  output_folder: ./
+  tracker_cfg: ./data/tracker_hyps.cfg
+  vm_dir: ./data/vis_vm/labeller/semantics
+debug: false
+is_vis: true
+output_csv_fp: ./la.csv
+pics_dir_fp: data/leaves
+scale_calib_fp: ./data/calib.txt
+tracker_cfg_fp: ./data/tracker_hyps.cfg
+vm_dir: ./data/vis_vm/labeller/semantics
+calib_fp: ./data/calibration.yaml
+cfg_dict:
+  calib_txt: ./data/calib.txt
+  calib_yaml: ./data/calibration.yaml
+  data_folder: data/leaves
+  debug: false
+  is_vis: true
+  output_folder: ./
+  tracker_cfg: ./data/tracker_hyps.cfg
+  vm_dir: ''
+debug: false
+is_vis: true
+output_csv_fp: ./la.csv
+pics_dir_fp: data/leaves
+scale_calib_fp: ./data/calib.txt
+tracker_cfg_fp: ./data/tracker_hyps.cfg
+vm_dir: ''

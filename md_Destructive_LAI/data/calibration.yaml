@@ -1,0 +1,11 @@
+crop_rect: !!python/tuple
+- 184
+- 30
+- 1720
+- 1489
+lower_hue: 0
+lower_saturation: 0
+lower_value: 1
+upper_hue: 179
+upper_saturation: 255
+upper_value: 237

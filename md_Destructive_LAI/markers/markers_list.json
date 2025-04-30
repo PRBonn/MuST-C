@@ -1,0 +1,42 @@
+{
+  "crops":
+  [
+    {
+      "crop_name": "Sugar Beets",
+      "plot_ids": ["7","8"],
+      "plot_notes": ["100% herbicide", "75% herbicide"],
+      "plot_PN_id": ["PN053002", "PN053001"]
+    },
+    {
+      "crop_name": "Summer wheat",
+      "plot_ids": ["11","15"],
+      "plot_notes": ["Granus,250 seeds/m2", "Granus, 450 seedspm2"],
+      "plot_PN_id": ["PN051002", "PN049002"]
+    },
+    {
+      "crop_name": "Sugar Corn",
+      "plot_ids": ["20","22"],
+      "plot_notes": ["Khan", "Popcorn Robust"],
+      "plot_PN_id": ["PN047001", "PN046001"]
+    },
+    {
+      "crop_name": "Soy bean",
+      "plot_ids": ["25","27"],
+      "plot_notes": ["Minngold", "Eiko"],
+      "plot_PN_id": ["PN044002", "PN043002"]
+    },
+    {
+      "crop_name": "Mixtures WF",
+      "plot_ids": ["37","39","40"],
+      "plot_notes": ["Mix_B_10", "SW_10", "FB_B"],
+      "plot_PN_id": ["PN038002", "PN037002", "PN037001"]
+    },
+    {
+      "crop_name": "Mixtures miniplots",
+      "plot_ids": ["xx"],
+      "plot_notes": ["miniplots"],
+      "plot_PN_id": ["miniplots"]
+    }
+
+  ]
+}
