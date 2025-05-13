@@ -21,7 +21,7 @@ and of multiple crops:
 * wheat - faba bean intercrop
 
 ## Dataset Download
-You can download parts of the dataset using the project [website](https://www.ipb.uni-bonn.de/data/MUST-C/)
+You can download parts of the dataset using the project [website](https://www.ipb.uni-bonn.de/data/MuST-C/)
 or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd).
 To use this code base, download the dataset into your desired $PARENT_DIR, while maintain the directory structure from the downloaded files:
 
