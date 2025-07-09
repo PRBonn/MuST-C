@@ -20,6 +20,35 @@ and of multiple crops:
 * wheat
 * wheat - faba bean intercrop
 
+## Quick Start
+Our dataset comprise data from multiple sensors over multiple days and multiple crops, and is useful for multiple tasks.
+In this example, we show how you can quickly start by performing a simple data processing: sorting all data into plot-level data for a given plot.
+
+1. Download sample data
+We provide a sample of our dataset for you to quickly download, check, and develop with our dataset.  
+[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/0J1Y8F&key=86b0cc03-24d8-4129-ac31-3ecbdadd60fd)  
+[Metadata about what is included in the sample data is here.](#sample-data)  
+2. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
+  You should get a directory structure like (which is the same the structure of the complete dataset):
+```
+MuST-C
+│   sample.zip
+└───images
+│   └───UAV1-RGB
+│       │   230614
+│       └───calibrations
+└───point_clouds
+└───raster_data
+    │   file021.txt
+    │   file022.txt
+
+```
+3. Run the script to extract the data for the plot of id 198 (sugar beet plot)
+```bash
+python3 ...
+```
+
+
 ## Dataset Download
 You can download parts of the dataset using the project [website](https://www.ipb.uni-bonn.de/data/MuST-C/)
 or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd).
@@ -40,4 +69,4 @@ We also provide some scripts we used in the development of our data set:
 * [scripts to extract LAI from a sequence of images here](md_Destructive_LAI)
 * [script(s) to obtain multispectral reflectance from **UAV3-MS**](UAV3-MS)
 
-
+## Sample Data
