@@ -21,7 +21,7 @@ and of multiple crops:
 * wheat - faba bean intercrop
 
 ## Quick Start
-Our dataset comprise data from multiple sensors over multiple days and multiple crops, and is useful for multiple tasks.
+Our dataset comprises data from multiple sensors over multiple days and multiple crops, and is useful for multiple tasks.
 In this example, we show how you can quickly start by performing a simple data processing: sorting all data into plot-level data for a given plot.
 
 1. Download sample data
