@@ -26,7 +26,7 @@ In this example, we show how you can quickly start by performing a simple data p
 
 1. Download sample data
 We provide a sample of our dataset for you to quickly download, check, and develop with our dataset.  
-[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/0J1Y8F&key=86b0cc03-24d8-4129-ac31-3ecbdadd60fd)  
+[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/YDODS9&key=86b0cc03-24d8-4129-ac31-3ecbdadd60fd)  
 [Metadata about what is included in the sample data is here.](#sample-data)  
 2. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
   You should get a directory structure like (which is the same the structure of the complete dataset):
