@@ -1,11 +1,8 @@
 # Code for destructive LAI measurement
 
-0. install necessary libraries and download sample data
+0. install necessary libraries
 ```sh
 pip install -r requirements.txt
-wget https://www.ipb.uni-bonn.de/data/MuST-C/data/sample_data.zip
-unzip sample_data
-
 ```
 1. Print the calibration file and scan before each leaf scanning
 You can modify the markers_list.json to customise the cultivars scanned.
