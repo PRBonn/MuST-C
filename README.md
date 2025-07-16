@@ -23,6 +23,7 @@ and of multiple crops:
 ## Quick Start
 Our dataset comprises data from multiple sensors over multiple days and multiple crops, and is useful for multiple tasks.
 In this example, we show how you can quickly start by performing a simple data processing: sorting all data into plot-level data for a given plot.
+Check out the [troubleshooting section](#troubleshoot) if you encounter any problems.
 
 1. Download sample data
 We provide a sample of our dataset for you to quickly download, check, and develop with our dataset.  
@@ -96,9 +97,14 @@ If you decide to subsequently download more of the dataset, you can seamlessly e
 Specifically, this sample contains:
 + images of the plot 198 from **UAV1-RGB** (14.06.2023), **UAV2-RGB** (15.06.2023), **UAV3-RGB** (15.06.2023), **UAV3-MS** (15.06.2023), and **UGV-RGB** (13.06.2023) and their calibration files
 + point clouds of the plot 198 from **UAV1-RGB** (14.06.2023), **UAV2-Lidar** (15.06.2023), **UGV-LMI** (13.06.2023), and **UGV-Ouster** (13.06.2023)
-+ raster data from **UAV2-RGB** (15.06.2023), **UAV3-RGB** (15.06.2023), and **UAV3-MS** (15.06.2023)
++ raster data from **UAV2-RGB** (15.06.2023), **UAV3-RGB** (15.06.2023), and **UAV3-MS** (15.06.2023). Note that we do not include the raster data from **UAV1-RGB** because this file would be too large.
 + LAI from destructive measurements, LAI from SunScan, and Biomass combined into a single .csv file (LAI\_biomass\_and\_metadata/LAI\_biomass\_combined.csv) for the whole trial period
 + shapefile of the field trial (**md_FieldSHP**)
 
 The sample.zip file is about 5 GB compressed. The uncompressed size is about 7 GB on disc. 
+
+## Troubleshoot
+1. Error in installing requirements.txt via pip 
++ We tested the code with Python 3.12 on a Ubuntu 24.04 LTS machine. If you are running on a different OS or Python version, you may need to make some custom changes to adapt to your system.
++ If you just created a new virtual environment, it could also be worth trying to upgrade your pip `pip install --upgrade pip`
 
