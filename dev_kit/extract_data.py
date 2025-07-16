@@ -81,15 +81,19 @@ def get_orthos(parent_dir, data_pkg_str):
     raster_fp_list = []
     date_str_list = []
 
+
     for raster_name in os.listdir(rasters_dir):
-        if "ortho" in raster_name:
-            raster_fp_list.append(os.path.join(rasters_dir, raster_name))
-            date_str_list.append(get_date(raster_name))
+        if "DEM" in raster_name:
+            continue
+        if raster_name == "readme":
+            continue
+        raster_fp_list.append(os.path.join(rasters_dir, raster_name))
+        date_str_list.append(get_date(raster_name))
 
     return raster_fp_list, date_str_list
 
 
-def get_plot(location, parent_dir, shp_fn="metadata/md_FieldSHP/md_FieldSHP.shp"):
+def get_plot(location, parent_dir, shp_fn="LAI_biomass_and_metadata/md_FieldSHP/md_FieldSHP.shp"):
     shp = gpd.read_file(os.path.join(parent_dir, shp_fn))
     s_p = Point(location)
     for idx, row in shp.iterrows():
@@ -102,7 +106,7 @@ def get_plot(location, parent_dir, shp_fn="metadata/md_FieldSHP/md_FieldSHP.shp"
             plot = row['plot_ID']
     return plot
 
-def get_pointclouds(parent_dir, data_pkg_str, location=(0,0), shp_fn="metadata/md_FieldSHP/md_FieldSHP.shp"):
+def get_pointclouds(parent_dir, data_pkg_str, location=(0,0), shp_fn="LAI_biomass_and_metadata/md_FieldSHP/md_FieldSHP.shp"):
     pc_fp_list = []
     date_str_list = []
     pcs_dir = os.path.join(parent_dir, "point_clouds", data_pkg_str)
@@ -164,11 +168,11 @@ def get_clips(parent_dir, POIs_csv, clip_size, output_dir, data_pkg_list, data_t
                 for index, row in POIs_df.iterrows():
                     if "RGB" in data_pkg_str:
                         img_pil = get_clip_rgb(raster_fp, (row["X"], row["Y"]), clip_size)
-                        img_pil.save(os.path.join(output_dir, str(row["crop"])+str(row["ID"])+data_pkg_str+"_"+date_str+".png"))
+                        img_pil.save(os.path.join(output_dir, str(row["crop"])+"_"+str(row["ID"])+"_"+data_pkg_str+"_"+date_str+".png"))
                     elif "MS" in data_pkg_str:
                         img_pil_list = get_clip_ms(raster_fp, (row["X"], row["Y"]), clip_size)
                         for c, img_pil in enumerate(img_pil_list):
-                            img_pil.save(os.path.join(output_dir, str(row["crop"])+str(row["ID"])+data_pkg_str+str(c)+"_"+date_str+".png"))
+                            img_pil.save(os.path.join(output_dir, str(row["crop"])+"_"+str(row["ID"])+"_"+data_pkg_str+"_"+str(c)+"_"+date_str+".png"))
         # for point cloud data 
         elif data_type == "pointcloud":
             for index, row in POIs_df.iterrows():
