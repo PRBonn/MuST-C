@@ -49,14 +49,14 @@ pip install .
 python3 get_plot_data.py \
         --parent_dir <path to downloaded MuST-C> \
         --output_dir <path to extracted plot-wise> \
-        --plot 198
+        --plot_id 198
 ```
 OR: if you are looking for a specific sensor, you can specify the sensor like this:
 ```bash
 python3 get_plot_data.py \
         --parent_dir <path to downloaded MuST-C> \
         --output_dir <path to extracted plot-wise> \
-        --plot 198 \
+        --plot_id 198 \
         --uav1-rgb \
         --uav2-rgb \
         --uav3-rgb \
