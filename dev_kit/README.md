@@ -9,7 +9,7 @@ pip install .
 
 ### Extracting data of a specific location
 This script can crop out a specific region of interest centred around given locations (UTM32N) 
-and of some specified size from(RGB and multispectral) raster data and point clouds.
+and of some specified size from (RGB and multispectral) raster data and point clouds.
 
 1. Download whichever parts of the [dataset](https://www.ipb.uni-bonn.de/data/MUST-C/) that you need to $PARENT_DIR.
 You will also need to also download the metadata ($PARENT_DIR/metadata) for the full functionality of the script. 
