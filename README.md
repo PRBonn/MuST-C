@@ -73,8 +73,7 @@ You can download parts of the dataset using the project [website](https://www.ip
 or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd).
 To use this code base, download the dataset into your desired $PARENT_DIR, while maintain the directory structure from the downloaded files:
 
-![dir_struct](https://github.com/user-attachments/assets/f868e8c7-c971-4882-9475-f7b44d3a1e99)
-
+![folder structure](./assets/folder_structure.svg)
 
 ## Developers Kit
 To use our data set, we provide a [developer's kit here](dev_kit),
