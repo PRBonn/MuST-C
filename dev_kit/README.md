@@ -26,7 +26,7 @@ python extract_data.py \
 ```
 
 ### Calculation of vegetation indices from multi-spectral data
-Get cropped vegetation indices (ndvi, ndre, evi, osavi) for a specific location:
+Get cropped vegetation indices (ndvi, ndre, evi, osavi) for a specific location in UTM coordinates (the images will be saved to the current working path):
 ```sh
 python get_vegetation_indices_ms.py \
        -p <$PARENT_DIR/raster_data/UAV3-MS/XX.tif> \
