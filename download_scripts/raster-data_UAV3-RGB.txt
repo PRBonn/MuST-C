@@ -1,1 +1,0 @@
-https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/QLPU4K
