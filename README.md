@@ -1,7 +1,7 @@
 # MuST-C: The Multi-Sensor and Multi-Temporal Dataset of Multiple Crops for In-Field Phenotyping and Monitoring
 
 
-[**Website**](https://www.ipb.uni-bonn.de/data/MuST-C/) **|** [**Data Repo**](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd)
+[**Website**](https://www.ipb.uni-bonn.de/data/MuST-C/) **|** [**Data Repo**](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM)
 
 ![MuST-C](https://github.com/user-attachments/assets/29f64697-294b-4087-9851-642c491566c6)
 This repo contains code pertaining to the data set MuST-C, a mutli-sensor, multi-temporal and multiple crop dataset, consisting of data from sensors:   
@@ -27,7 +27,7 @@ Check out the [troubleshooting section](#troubleshoot) if you encounter any prob
 
 1. Download sample data
 We provide a sample of our dataset for you to quickly download, check, and develop with our dataset.  
-[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/YDODS9&key=86b0cc03-24d8-4129-ac31-3ecbdadd60fd)  
+[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/YDODS9)  
 [Metadata about what is included in the sample data is here.](#sample-data)  
 2. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
   You should get a directory structure like (which is the same the structure of the complete dataset):
@@ -70,8 +70,10 @@ python3 get_plot_data.py \
 This will process all data from the specified sensor. For example, using the flag `uav1-rgb` the script will process all the images, pointclouds, and raster data, present in `parent_dir`, and will skip any missing files.
 
 ## Dataset Download
-You can download parts of the dataset using the project [website](https://www.ipb.uni-bonn.de/data/MuST-C/)
-or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/previewurl.xhtml?token=86b0cc03-24d8-4129-ac31-3ecbdadd60fd).
+We provide the urls to download files based on their sensor modality and data package [here](download_scripts).
+
+You can also download parts of the dataset using the project [website](https://www.ipb.uni-bonn.de/data/MuST-C/)
+or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM).
 To use this code base, download the dataset into your desired $PARENT_DIR, while maintain the directory structure from the downloaded files:
 
 ![folder structure](./assets/folder_structure.svg)
@@ -89,7 +91,7 @@ We also provide some scripts we used in the development of our data set:
 * [script(s) to obtain multispectral reflectance from **UAV3-MS**](UAV3-MS)
 
 ## Sample Data
-We provide a sample of our dataset [here](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/0J1Y8F&key=86b0cc03-24d8-4129-ac31-3ecbdadd60fd).
+We provide a sample of our dataset [here](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/YDODS9).
 The sample focuses on data from mid-June (around 14.06.2023) for the plot 198 of sugar beets.
 To keep the filesize reasonaly small, we only extracted data of only the plot 198 with the exceptions of the point cloud from  **UAV2-Lidar** and all raster data which comprises the whole field for one date.
 If you decide to subsequently download more of the dataset, you can seamlessly extract the new data into the same parent directory because this sample data follows the same directory structure as the complete dataset.
