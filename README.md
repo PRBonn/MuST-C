@@ -84,18 +84,18 @@ python3 get_plot_data.py \
         --ugv-lmi \
         --ugv-ouster
 ```
-This will process all data from the specified sensor. For example, using the flag `uav1-rgb` the script will process all the images, pointclouds, and raster data, present in `parent_dir`, and will skip any missing files.
+This will process all data from the specified sensor. For example, using the flag `uav1-rgb`, the script will process all the images, point clouds, and raster data, present in `parent_dir`, and will skip any missing files.
 
 ## Dataset Download
-We provide the urls to download files based on their sensor modality and data package [here](download_scripts).
+We provide the URLs to download files based on their sensor modality and data package [here](download_scripts).
 
 You can also download parts of the dataset using the project [website](https://www.ipb.uni-bonn.de/data/MuST-C/)
 or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM).
-To use this code base, download the dataset into your desired $PARENT_DIR, while maintain the directory structure from the downloaded files:
+To use this code base, download the dataset into your desired $PARENT_DIR, while maintaining the directory structure from the downloaded files:
 
 ![folder structure](./assets/folder_structure.svg)
 
-## Developers Kit
+## Developer's Kit
 To use our data set, we provide a [developer's kit here](dev_kit),
 where we share the scripts used to extract the data shown in our motivating figure (above) and other useful functions.
 
@@ -126,5 +126,10 @@ The sample.zip file is about 5 GB compressed. The uncompressed size is about 7 G
 1. Error in installing requirements.txt via pip 
   + We tested the code with Python 3.12 on a Ubuntu 24.04 LTS machine. If you are running on a different OS or Python version, you may need to make some custom changes to adapt to your system.  
   + If you just created a new virtual environment, it could also be worth trying to upgrade your pip `pip install --upgrade pip`
-2. Dev kit does not output some file
+2. The dev kit does not output some files
   + We designed the dev kit to work with subsets of the dataset. If you want to process a specific plot or data type, please first make sure to download and place the necessary data to your $PARENT_DIR
+3. How to read the point clouds?
+  + We recommend three ways to read our point clouds:
+    a. With (CloudCompare)[https://www.cloudcompare.org/] for quick and easy visualisation and editing
+    b. With (laspy)[https://laspy.readthedocs.io/en/latest/installation.html] for Python
+    c. With (QGIS)[https://qgis.org/download/] for geographic Information System (GIS) functionalities
