@@ -132,12 +132,33 @@ The sample.zip file is about 5 GB compressed. The uncompressed size is about 7 G
   + We recommend three ways to read our point clouds: 
   <details>
   <summary>With [CloudCompare](https://www.cloudcompare.org/) for quick and easy visualisation and editing</summary>
-1. Download QGIS from https://qgis.org/download/ and open the QGIS software.
-  
+  1. Download CloudCompare from https://www.cloudcompare.org/ and open the CloudCompare software.
+  2. Select all the point cloud files. Drag and drop the files into the CloudCompare window. We recommend using the default settings from CloudCompare, so in all options, select ‘Yes to all’
+or ‘Apply to all’.
+  3. Click on the ‘Point picking’ icon on the top left, and click on a point of interest.
+    <img width="3858" height="2160" alt="image" src="https://github.com/user-attachments/assets/a2de1bbf-4c54-4b52-8666-9d1aea609e35" />
 </details>
+
 <details>
-  With [laspy](https://laspy.readthedocs.io/en/latest/installation.html) for Python
-    </details>
+<summary>With [laspy](https://laspy.readthedocs.io/en/latest/installation.html) for Python<\summary>
+    
+1. Download laspy via pip ‘pip install laspy’ or follow more detailed instructions at their website
+https://laspy.readthedocs.io/en/latest/installation.html.
+    2. In Python, import laspy and open the .las file:
+    ```Python
+import laspy
+plot164 = laspy.read(“./plot-wise/plot164/230525-26/point clouds/UAV2-Lidar/230526.las”)
+    ```
+    3. Check the values in the point cloud:
+    ```Python
+print(plot164.x)
+print(plot164.y)
+    ```
+</details>
+    
 <details>
-  With [QGIS](https://qgis.org/download/) for geographic Information System (GIS) functionalities 
+  <summary>With [QGIS](https://qgis.org/download/) for geographic Information System (GIS) functionalities<\summary>
+    1. Download QGIS from https://qgis.org/download/ and open the QGIS software.
+2. Select all the point cloud files. Drag and drop the files into the QGIS window.
+3. To see the values of a specific point, you can click on the ‘Identify Features’ at the top and select the point of interest. <img width="3844" height="2164" alt="image" src="https://github.com/user-attachments/assets/1e37f3fc-2f9b-45b7-b2e9-f6ae6bf0f72b" />
     </details>
