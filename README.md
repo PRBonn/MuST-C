@@ -30,7 +30,24 @@ We provide a sample of our dataset for you to quickly download, check, and devel
 [Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/YDODS9)  
 [Metadata about what is included in the sample data is here.](#sample-data)  
 2. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
-  You should get a directory structure like (which is the same the structure of the complete dataset):
+  You should get a directory structure like (which is the same as the structure of the complete dataset):
+<details>
+  <summary>How to unzip in Windows</summary>
+  
+  1. Install 7-Zip from https://www.7-zip.org/. Although you can manually extract each .zip file without 7-Zip, we recommend you use 7-Zip to automatically extract multiple .zip files.
+  2. Open 7-Zip, and navigate to the directory where you downloaded the .zip files. <img width="1424" height="732" alt="image" src="https://github.com/user-attachments/assets/6c3ce69b-a26d-4402-b295-a70f05e57d2a" />
+  3. Select all the .zip files you wish to extract. Then, click on the ‘Extract’ button at the top ribbon. <img width="1424" height="732" alt="image" src="https://github.com/user-attachments/assets/593a3b4f-53ab-4d3a-a102-b4c5cd3de08b" />
+4. Set the directory where you would like to extract. Take note to uncheck the box that would create new directories for each zip file. <img width="1424" height="732" alt="image" src="https://github.com/user-attachments/assets/d7b52f16-84b5-4f15-aa78-3c8aae58b168" />
+5. Once complete, you will see that the directories follow the structure from the paper. <img width="1424" height="732" alt="image" src="https://github.com/user-attachments/assets/abce0943-9117-42fc-b2ac-758150d677c6" />
+</details>
+<details>
+  <summary>How to unzip in Linux</summary>
+  
+  1. Download the .zip file(s) to your desired path $PARENT DIR.
+  2. Inside the $PARENT DIR directory, run `unzip FILE NAME.zip`, OR \
+If you want to unzip all .zip files, run ```bash for fn in *.zip; do unzip -q $fn; done```
+</details>
+  
 ```
 MuST-C
 └───images
