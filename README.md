@@ -129,7 +129,7 @@ The sample.zip file is about 5 GB compressed. The uncompressed size is about 7 G
 2. The dev kit does not output some files
   + We designed the dev kit to work with subsets of the dataset. If you want to process a specific plot or data type, please first make sure to download and place the necessary data to your $PARENT_DIR
 3. How to read the point clouds?
-  + We recommend three ways to read our point clouds:
-    a. With (CloudCompare)[https://www.cloudcompare.org/] for quick and easy visualisation and editing
-    b. With (laspy)[https://laspy.readthedocs.io/en/latest/installation.html] for Python
-    c. With (QGIS)[https://qgis.org/download/] for geographic Information System (GIS) functionalities
+  + We recommend three ways to read our point clouds: \
+    a. With [CloudCompare](https://www.cloudcompare.org/) for quick and easy visualisation and editing \
+    b. With [laspy](https://laspy.readthedocs.io/en/latest/installation.html) for Python \
+    c. With [QGIS](https://qgis.org/download/) for geographic Information System (GIS) functionalities 
