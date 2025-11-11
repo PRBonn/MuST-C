@@ -159,7 +159,7 @@ or "Apply to all".
   <summary>With QGIS for geographic Information System (GIS) functionalities</summary>
     
   1. [Download QGIS](https://ftp.osuosl.org/pub/osgeo/download/qgis/windows/QGIS-OSGeo4W-3.26.3-1.msi). Note: we recommend using the older version of QGIS Buenos Aires due to current issues with PDAL.
-  2. Open the QGIS software.
+  2. Open the QGIS software, create a new project.
   3. Select all the point cloud files. Drag and drop the files into the QGIS window.
   4. To see the values of a specific point, you can click on the "Identify Features" at the top and select the point of interest. <img width="3844" height="2164" alt="image" src="https://github.com/user-attachments/assets/1e37f3fc-2f9b-45b7-b2e9-f6ae6bf0f72b" />
     
