@@ -483,9 +483,14 @@ def one_plot(
                     las_points = np.vstack((las.x, las.y, las.z)).transpose()
                     pcd = o3d.geometry.PointCloud()
                     pcd.points = o3d.utility.Vector3dVector(las_points)
-                    cl, ind = pcd.remove_statistical_outlier(nb_neighbors=20,                                                                                    std_ratio=1.0)
+                    if date[3] == "8":
+                        std_ratio=1.0
+                    else:
+                        std_ratio=2.0
+                    cl, ind = pcd.remove_statistical_outlier(nb_neighbors=6,
+                            std_ratio=std_ratio)
                     las = las[ind]
-    
+                    las.update_header() 
                     las.write(os.path.join(output_dir, f"plot{plot_id}", date, "point_clouds", "UAV2-Lidar", f"{date}.las"))
 
         if ugv_lmi:
