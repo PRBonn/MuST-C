@@ -27,9 +27,10 @@ Check out the [troubleshooting section](#troubleshoot) if you encounter any prob
 
 1. Download sample data
 We provide a sample of our dataset for you to quickly download, check, and develop with our dataset.  
-[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/YDODS9)  
-[Metadata about what is included in the sample data is here.](#sample-data)  
-2. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
+[Click here to download the sample data.](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/3TYPHZ)  
+[Metadata about what is included in the sample data is here.](#sample-data)
+[You can also get the sample data that is organized plot-wise here](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/L1IMED)
+3. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
   You should get a directory structure like (which is the same as the structure of the complete dataset):
 <details>
   <summary>How to unzip in Windows</summary>
