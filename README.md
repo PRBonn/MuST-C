@@ -93,7 +93,7 @@ You can also download parts of the dataset using the project [website](https://w
 or the full dataset (~4TB) from the [data repo](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM).
 To use this code base, download the dataset into your desired $PARENT_DIR, while maintaining the directory structure from the downloaded files:
 
-![folder structure](./assets/folder_structure.svg)
+<img width="1313" height="695" alt="folder_structure2" src="https://github.com/user-attachments/assets/500d9a6a-26c1-4a3f-a7a2-9f6d92dc3c71" />
 
 ## Developer's Kit
 To use our data set, we provide a [developer's kit here](dev_kit),
