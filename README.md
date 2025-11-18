@@ -124,6 +124,7 @@ Specifically, this sample contains:
 The sample.zip file is about 5 GB compressed. The uncompressed size is about 7 GB on disc. 
 
 ## Troubleshoot
+Below are some FAQs; if you have another question, open an issue [here](https://github.com/PRBonn/MuST-C/issues)
 1. Error in installing requirements.txt via pip 
   + We tested the code with Python 3.12 on a Ubuntu 24.04 LTS machine. If you are running on a different OS or Python version, you may need to make some custom changes to adapt to your system.  
   + If you just created a new virtual environment, it could also be worth trying to upgrade your pip `pip install --upgrade pip`
@@ -163,6 +164,6 @@ or "Apply to all".
   2. Open the QGIS software, create a new project.
   3. Select all the point cloud files. Drag and drop the files into the QGIS window. (This might take a few minutes)
   4. To see the values of a specific point, you can click on the "Identify Features" at the top and select the point of interest. <img width="3844" height="2164" alt="image" src="https://github.com/user-attachments/assets/1e37f3fc-2f9b-45b7-b2e9-f6ae6bf0f72b" />
-    
 </details> 
+
 
