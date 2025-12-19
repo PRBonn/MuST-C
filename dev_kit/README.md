@@ -11,7 +11,7 @@ pip install .
 This script can crop out a specific region of interest centred around given locations (UTM32N) 
 and of some specified size from (RGB and multispectral) raster data and point clouds.
 
-1. Download whichever parts of the [dataset](https://www.ipb.uni-bonn.de/data/MUST-C/) that you need to $PARENT_DIR.
+1. Download whichever parts of the [dataset](https://www.ipb.uni-bonn.de/data/MuST-C/) that you need to $PARENT_DIR.
 You will also need to also download the metadata ($PARENT_DIR/metadata) for the full functionality of the script. 
 2. List the locations of interest in the csv, see example poi.csv for formatting.
 3. List the types of data you want for all the points in another csv, see example data.csv for formatting.
