@@ -1,7 +1,7 @@
 # MuST-C: The Multi-Sensor and Multi-Temporal Dataset of Multiple Crops for In-Field Phenotyping and Monitoring
 
 
-[**Website**](https://www.ipb.uni-bonn.de/data/MuST-C/) **|** [**Data Repo**](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM)
+[**Website**](https://www.ipb.uni-bonn.de/data/MuST-C/) **|** [**Data Repo**](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM) **|** [**Paper _(Sci. Data)_**](https://www.nature.com/articles/s41597-025-06462-y)
 
 ![MuST-C](https://github.com/user-attachments/assets/29f64697-294b-4087-9851-642c491566c6)
 This repo contains code pertaining to the data set MuST-C, a mutli-sensor, multi-temporal and multiple crop dataset, consisting of data from sensors:   
@@ -164,6 +164,27 @@ or "Apply to all".
   2. Open the QGIS software, create a new project.
   3. Select all the point cloud files. Drag and drop the files into the QGIS window. (This might take a few minutes)
   4. To see the values of a specific point, you can click on the "Identify Features" at the top and select the point of interest. <img width="3844" height="2164" alt="image" src="https://github.com/user-attachments/assets/1e37f3fc-2f9b-45b7-b2e9-f6ae6bf0f72b" />
-</details> 
+
+</details>
+
+
+## Cite us
+### Plain text
+Chong, Y.L., Krämer, J., Chakhvashvili, E. et al. The Multi-Sensor and Multi-Temporal Dataset of Multiple Crops for In-Field Phenotyping and Monitoring. Sci Data 13, 17 (2026). https://doi.org/10.1038/s41597-025-06462-y
+### Bibtex
+```
+@article{chong2026sdata,
+author = {Chong, Yue Linn and Kr\"amer, Julie and Chakhvashvili, Erekle and Marks, Elias and Esser, Felix and Dreier, Ansgar and Rosu, Radu Alexandru and Warstat, Kevin and Pude, Ralf and Behnke, Sven and Muller, Onno and Rascher, Uwe and Kuhlmann, Heiner and Stachniss, Cyrill and Behley, Jens and Klingbeil, Lasse},
+title = {{The Multi-Sensor and Multi-Temporal Dataset of Multiple Crops for In-Field Phenotyping and Monitoring}},
+journal = {Nature Scientific Data},
+volume = {13},
+year = 2026,
+doi = {10.1038/s41597-025-06462-y},
+url = {https://www.nature.com/articles/s41597-025-06462-y.pdf},
+codeurl = {https://www.ipb.uni-bonn.de/data/MuST-C/},
+}
+```
+
+
 
 
