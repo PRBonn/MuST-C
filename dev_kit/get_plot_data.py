@@ -95,7 +95,7 @@ def get_clip_plot_rgb(ortho_fp, plot_poly, out_fp):
 
 # filter out images which contains the plot
 def one_date_images(calip_fp, shp_fp, plot_id, file_ext, data_str, date, parent_dir, output_dir):
-    os.makedirs(os.path.join(output_dir, date, f"plot{plot_id}", "images", data_str), exist_ok=True)
+    os.makedirs(os.path.join(output_dir, f"plot{plot_id}", date, "images", data_str), exist_ok=True)
     img_list = get_img_fps(calip_fp, shp_fp, plot_id, d_size_m=1) 
     for img_fn in img_list:
         img_fn = img_fn + file_ext
@@ -250,12 +250,12 @@ def one_plot(
             if check_dir(parent_dir, "images", "UAV1-RGB", output_dir=output_dir):
                 for date in os.listdir(os.path.join(parent_dir, "images", "UAV1-RGB")):
                     if date == "cam_params":
-                        shutil.copytree(
-                            os.path.join(parent_dir, "images", "UAV1-RGB", date),
-                            os.path.join(output_dir, "images", "UAV1-RGB", date),
-                            copy_function=shutil.copy2,
-                            dirs_exist_ok=True
-                            )
+                        # shutil.copytree(
+                        #     os.path.join(parent_dir, "images", "UAV1-RGB", date),
+                        #     os.path.join(output_dir, "images", "UAV1-RGB", date),
+                        #     copy_function=shutil.copy2,
+                        #     dirs_exist_ok=True
+                        #     )
                         continue
 
                     calip_fp = os.path.join(parent_dir, "images", "UAV1-RGB", "cam_params", date, "cam_params.txt")
@@ -267,15 +267,15 @@ def one_plot(
                     calip_fp = os.path.join(parent_dir, "images", "UAV2-RGB", date, "cam_params.txt")
                     one_date_images(calip_fp, shp_fp, plot_id, ".JPG", "UAV2-RGB", date, parent_dir, output_dir)
 
-                    shutil.copy2(
-                            os.path.join(parent_dir, "images", "UAV2-RGB", date, "cam_params.txt"),
-                            os.path.join(output_dir, "images", "UAV2-RGB", date, "cam_params.txt"),
-                            )
+                    # shutil.copy2(
+                    #         os.path.join(parent_dir, "images", "UAV2-RGB", date, "cam_params.txt"),
+                    #         os.path.join(output_dir, "images", "UAV2-RGB", date, "cam_params.txt"),
+                    #         )
 
-                    shutil.copy2(
-                            os.path.join(parent_dir, "images", "UAV2-RGB", date, "cam_params.xml"),
-                            os.path.join(output_dir, "images", "UAV2-RGB", date, "cam_params.xml"),
-                            )
+                    # shutil.copy2(
+                    #         os.path.join(parent_dir, "images", "UAV2-RGB", date, "cam_params.xml"),
+                    #         os.path.join(output_dir, "images", "UAV2-RGB", date, "cam_params.xml"),
+                    #         )
 
         if uav3_rgb:
             if check_dir(parent_dir, "images", "UAV3-RGB", output_dir=output_dir):
@@ -283,15 +283,15 @@ def one_plot(
                     calip_fp = os.path.join(parent_dir, "images", "UAV3-RGB", date, "cam_params.txt")
                     one_date_images(calip_fp, shp_fp, plot_id, ".JPG", "UAV3-RGB", date, parent_dir, output_dir)
 
-                    shutil.copy2(
-                            os.path.join(parent_dir, "images", "UAV3-RGB", date, "cam_params.txt"),
-                            os.path.join(output_dir, "images", "UAV3-RGB", date, "cam_params.txt"),
-                            )
+                    # shutil.copy2(
+                    #         os.path.join(parent_dir, "images", "UAV3-RGB", date, "cam_params.txt"),
+                    #         os.path.join(output_dir, "images", "UAV3-RGB", date, "cam_params.txt"),
+                    #         )
 
-                    shutil.copy2(
-                            os.path.join(parent_dir, "images", "UAV3-RGB", date, "cam_params.xml"),
-                            os.path.join(output_dir, "images", "UAV3-RGB", date, "cam_params.xml"),
-                            )
+                    # shutil.copy2(
+                    #         os.path.join(parent_dir, "images", "UAV3-RGB", date, "cam_params.xml"),
+                    #         os.path.join(output_dir, "images", "UAV3-RGB", date, "cam_params.xml"),
+                    #         )
 
         if uav3_ms:
             if check_dir(parent_dir, "images", "UAV3-MS", output_dir=output_dir):
@@ -301,26 +301,26 @@ def one_plot(
                     calip_fp = os.path.join(parent_dir, "images", "UAV3-MS", date, "cam_params.txt")
                     one_date_images(calip_fp, shp_fp, plot_id, ".tif", "UAV3-MS", date, parent_dir, output_dir)
 
-                    shutil.copy2(
-                            os.path.join(parent_dir, "images", "UAV3-MS", date, "cam_params.txt"),
-                            os.path.join(output_dir, "images", "UAV3-MS", date, "cam_params.txt"),
-                            )
+                    # shutil.copy2(
+                    #         os.path.join(parent_dir, "images", "UAV3-MS", date, "cam_params.txt"),
+                    #         os.path.join(output_dir, "images", "UAV3-MS", date, "cam_params.txt"),
+                    #         )
 
-                    shutil.copy2(
-                            os.path.join(parent_dir, "images", "UAV3-MS", date, "cam_params.xml"),
-                            os.path.join(output_dir, "images", "UAV3-MS", date, "cam_params.xml"),
-                            )
+                    # shutil.copy2(
+                    #         os.path.join(parent_dir, "images", "UAV3-MS", date, "cam_params.xml"),
+                    #         os.path.join(output_dir, "images", "UAV3-MS", date, "cam_params.xml"),
+                    #         )
 
         if ugv_rgb:
             if check_dir(parent_dir, "images", "UGV-RGB", output_dir=output_dir):
                 for date in os.listdir(os.path.join(parent_dir, "images", "UGV-RGB")):
                     os.makedirs(os.path.join(output_dir, "images", "UGV-RGB", date), exist_ok=True)
                     calib_fp = os.path.join(parent_dir, "images", "UGV-RGB", date, "cam_params.xml")
-                    if os.path.isfile(calib_fp):
-                        shutil.copy2(
-                                calib_fp,
-                                os.path.join(output_dir, "images", "UGV-RGB", date, "cam_params.xml")
-                                )
+                    # if os.path.isfile(calib_fp):
+                    #     shutil.copy2(
+                    #             calib_fp,
+                    #             os.path.join(output_dir, "images", "UGV-RGB", date, "cam_params.xml")
+                    #             )
                     if os.path.isdir(os.path.join(parent_dir, "images", "UGV-RGB", date, f"plot{plot_id}")):
                         shutil.copytree(
                             os.path.join(parent_dir, "images", "UGV-RGB", date, f"plot{plot_id}"),
@@ -510,7 +510,7 @@ def one_plot(
                 parent_dir_ugvlmi = os.path.join(parent_dir, "point_clouds", "UGV-Ouster", f"plot{plot_id}")
                 if os.path.isdir(parent_dir_ugvlmi):
                     # open ugv area shape 
-                    shp = gpd.read_file("/home/linn/ipb/leaf_scanner/UGV_area/UGV_area2.shp")
+                    shp = gpd.read_file("../assets/UGV_area/UGV_area2.shp")
                     polygon = shp.geometry.iloc[0]
                     for date_pc in os.listdir(parent_dir_ugvlmi):
                         new_dir = os.path.join(output_dir, f"plot{plot_id}",  date_pc.split(".")[0], "point_clouds", "UGV-Ouster")
