@@ -4,7 +4,7 @@
 [**Website**](https://www.ipb.uni-bonn.de/data/MuST-C/) **|** [**Data Repo**](https://bonndata.uni-bonn.de/dataset.xhtml?persistentId=doi:10.60507/FK2/OX9XTM) **|** [**Paper _(Sci. Data)_**](https://www.nature.com/articles/s41597-025-06462-y)
 
 ![MuST-C](https://github.com/user-attachments/assets/29f64697-294b-4087-9851-642c491566c6)
-This repo contains code pertaining to the data set MuST-C, a mutli-sensor, multi-temporal and multiple crop dataset, consisting of data from sensors:   
+This repo contains code pertaining to the dataset MuST-C, a multi-sensor, multi-temporal and multiple crop dataset, consisting of data from sensors:   
 * High resolution RGB camera
 * Multispectral cameras (10 bands)
 * 20x instantaneously-triggered cameras 
@@ -25,12 +25,12 @@ Our dataset comprises data from multiple sensors over multiple days and multiple
 In this example, we show how you can quickly start by performing a simple data processing: sorting all data into plot-level data for a given plot.
 Check out the [troubleshooting section](#troubleshoot) if you encounter any problems.
 
-1. Download sample data
+1. Download sample data.
 We provide a sample of our dataset for you to quickly download, check, and develop with our dataset.  
 [Click here to download the sample data](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/3TYPHZ)  
 [Metadata about what is included in the sample data is here](#sample-data)   
 [You can also get the sample data that is organized plot-wise here](https://bonndata.uni-bonn.de/api/access/datafile/:persistentId?persistentId=doi:10.60507/FK2/OX9XTM/L1IMED)   
-3. Uncompress the downloaded ``sample.zip'' to where you want your dataset to be extracted.
+3. Uncompress the downloaded ''sample.zip'' to where you want your dataset to be extracted.
   You should get a directory structure like (which is the same as the structure of the complete dataset):
 <details>
   <summary>How to unzip in Windows</summary>
@@ -46,7 +46,7 @@ We provide a sample of our dataset for you to quickly download, check, and devel
   
   1. Download the .zip file(s) to your desired path $PARENT DIR.
   2. Inside the $PARENT DIR directory, run `unzip FILE NAME.zip`, OR \
-If you want to unzip all .zip files, run ```bash for fn in *.zip; do unzip -q $fn; done```
+If you want to unzip all .zip files, run `for fn in *.zip; do unzip -q $fn; done`
 </details>
   
 ```
@@ -56,7 +56,7 @@ MuST-C
 └───raster_data
 └───LAI_biomass_and_metadata
 ```
-3. Clone this repo and install the dev kit. We recommend using a virtual environment or Docker for this.
+3. Clone this repo and install the dev kit. We recommend using a virtual environment or Docker with Python 3.11 for this.
 ```bash
 git clone https://github.com/PRBonn/MuST-C.git
 cd MuST-C/dev_kit
@@ -97,14 +97,14 @@ To use this code base, download the dataset into your desired $PARENT_DIR, while
 <img width="1313" height="695" alt="folder_structure2" src="https://github.com/user-attachments/assets/500d9a6a-26c1-4a3f-a7a2-9f6d92dc3c71" />
 
 ## Developer's Kit
-To use our data set, we provide a [developer's kit here](dev_kit),
+To use our dataset, we provide a [developer's kit here](dev_kit),
 where we share the scripts used to extract the data shown in our motivating figure (above) and other useful functions.
 
 ## Plotting Graphs
 To reproduce the graphs in our paper, we provide the relevant [scripts here](plot_graphs_from_paper).
 
 ## Code Release
-We also provide some scripts we used in the development of our data set:
+We also provide some scripts we used in the development of our dataset:
 * [scripts to extract LAI from a sequence of images here](md_Destructive_LAI)
 * [script(s) to obtain multispectral reflectance from **UAV3-MS**](UAV3-MS)
 
