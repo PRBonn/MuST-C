@@ -8,3 +8,12 @@ build-backend = "setuptools.build_meta"
 name = "utils"
 version = "1.0"
 dependencies = []
+
+[tool.setuptools]
+py-modules = [
+    "get_images_for_a_plot",
+    "get_vegetation_indices_ms",
+    "extract_data",
+    "get_dates_by_plots",
+    "get_plot_data"
+]
