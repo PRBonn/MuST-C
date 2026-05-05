@@ -76,16 +76,16 @@ python3 get_plot_data.py \
         --parent_dir <path to downloaded MuST-C> \
         --output_dir <path to extracted plot-wise> \
         --plot_id 198 \
-        --uav1-rgb \
-        --uav2-rgb \
-        --uav3-rgb \
-        --uav3-ms \
-        --ugv-rgb \
-        --uav2-lidar \
-        --ugv-lmi \
-        --ugv-ouster
+        --uav1_rgb \
+        --uav2_rgb \
+        --uav3_rgb \
+        --uav3_ms \
+        --ugv_rgb \
+        --uav2_lidar \
+        --ugv_lmi \
+        --ugv_ouster
 ```
-This will process all data from the specified sensor. For example, using the flag `uav1-rgb`, the script will process all the images, point clouds, and raster data, present in `parent_dir`, and will skip any missing files.
+This will process all data from the specified sensor. For example, using the flag `uav1_rgb`, the script will process all the images, point clouds, and raster data, present in `parent_dir`, and will skip any missing files.
 
 ## Dataset Download
 We provide the URLs to download files based on their sensor modality and data package [here](download_scripts).
@@ -126,7 +126,7 @@ The sample.zip file is about 5 GB compressed. The uncompressed size is about 7 G
 ## Troubleshoot
 Below are some FAQs; if you have another question, open an issue [here](https://github.com/PRBonn/MuST-C/issues)
 1. Error in installing requirements.txt via pip 
-  + We tested the code with Python 3.12 on a Ubuntu 24.04 LTS machine. If you are running on a different OS or Python version, you may need to make some custom changes to adapt to your system.  
+  + We tested the code with Python 3.11 on a Ubuntu 24.04 LTS machine. If you are running on a different OS or Python version, you may need to make some custom changes to adapt to your system.  
   + If you just created a new virtual environment, it could also be worth trying to upgrade your pip `pip install --upgrade pip`
 2. The dev kit does not output some files
   + We designed the dev kit to work with subsets of the dataset. If you want to process a specific plot or data type, please first make sure to download and place the necessary data to your $PARENT_DIR
