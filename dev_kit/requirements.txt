@@ -13,3 +13,5 @@ laspy==2.5.4
 shapely==2.0.7
 opencv-python==4.10.0.84
 tifffile==2025.6.11
+tqdm
+open3d
