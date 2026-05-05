@@ -245,9 +245,10 @@ def one_plot(
     shp_fp = os.path.join(parent_dir, "LAI_biomass_and_metadata", "md_FieldSHP", "md_FieldSHP.shp")
     assert os.path.isfile(shp_fp), f"md_FieldSHP shapefile not found at {shp_fp}"
     # images 
+
     if check_dir(parent_dir, "images"):
         if uav1_rgb:
-            if check_dir(parent_dir, "images", "UAV1-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "images", "UAV1-RGB"): 
                 for date in os.listdir(os.path.join(parent_dir, "images", "UAV1-RGB")):
                     if date == "cam_params":
                         # shutil.copytree(
@@ -262,7 +263,7 @@ def one_plot(
                     one_date_images(calip_fp, shp_fp, plot_id, ".tiff", "UAV1-RGB", date, parent_dir, output_dir)
 
         if uav2_rgb:
-            if check_dir(parent_dir, "images", "UAV2-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "images", "UAV2-RGB"): 
                 for date in os.listdir(os.path.join(parent_dir, "images", "UAV2-RGB")):
                     calip_fp = os.path.join(parent_dir, "images", "UAV2-RGB", date, "cam_params.txt")
                     one_date_images(calip_fp, shp_fp, plot_id, ".JPG", "UAV2-RGB", date, parent_dir, output_dir)
@@ -278,7 +279,7 @@ def one_plot(
                     #         )
 
         if uav3_rgb:
-            if check_dir(parent_dir, "images", "UAV3-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "images", "UAV3-RGB"): 
                 for date in os.listdir(os.path.join(parent_dir, "images", "UAV3-RGB")):
                     calip_fp = os.path.join(parent_dir, "images", "UAV3-RGB", date, "cam_params.txt")
                     one_date_images(calip_fp, shp_fp, plot_id, ".JPG", "UAV3-RGB", date, parent_dir, output_dir)
@@ -294,7 +295,7 @@ def one_plot(
                     #         )
 
         if uav3_ms:
-            if check_dir(parent_dir, "images", "UAV3-MS", output_dir=output_dir):
+            if check_dir(parent_dir, "images", "UAV3-MS"): 
                 for date in os.listdir(os.path.join(parent_dir, "images", "UAV3-MS")):
                     if date == "reference_panels":
                         continue
@@ -312,7 +313,7 @@ def one_plot(
                     #         )
 
         if ugv_rgb:
-            if check_dir(parent_dir, "images", "UGV-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "images", "UGV-RGB"):
                 for date in os.listdir(os.path.join(parent_dir, "images", "UGV-RGB")):
                     os.makedirs(os.path.join(output_dir, "images", "UGV-RGB", date), exist_ok=True)
                     calib_fp = os.path.join(parent_dir, "images", "UGV-RGB", date, "cam_params.xml")
@@ -333,7 +334,7 @@ def one_plot(
     if check_dir(parent_dir, "raster_data"):
         plot_poly = get_plot_poly(shp_fp, plot_id)
         if uav1_rgb:
-            if check_dir(parent_dir, "raster_data", "UAV1-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "raster_data", "UAV1-RGB"): 
                 for ortho_fn in os.listdir(os.path.join(parent_dir, "raster_data", "UAV1-RGB")):
                     date = ortho_fn[:-4]
                     os.makedirs(os.path.join(output_dir, f"plot{plot_id}", date, "raster_data", "UAV1-RGB"), exist_ok=True)
@@ -344,7 +345,7 @@ def one_plot(
                             )
 
         if uav2_rgb:
-            if check_dir(parent_dir, "raster_data", "UAV2-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "raster_data", "UAV2-RGB"):
                 for ortho_fn in os.listdir(os.path.join(parent_dir, "raster_data", "UAV2-RGB")):
                     date = ortho_fn[:-4]
                     os.makedirs(os.path.join(output_dir, f"plot{plot_id}", date, "raster_data", "UAV2-RGB"), exist_ok=True)
@@ -355,7 +356,7 @@ def one_plot(
                             )
 
         if uav3_rgb:
-            if check_dir(parent_dir, "raster_data", "UAV3-RGB", output_dir=output_dir):
+            if check_dir(parent_dir, "raster_data", "UAV3-RGB"):
                 for ortho_fn in os.listdir(os.path.join(parent_dir, "raster_data", "UAV3-RGB")):
                     date = ortho_fn.split("_")[0]
                     os.makedirs(os.path.join(output_dir, f"plot{plot_id}", date, "raster_data", "UAV3-RGB"), exist_ok=True)
@@ -366,7 +367,7 @@ def one_plot(
                             )
 
         if uav3_ms:
-            if check_dir(parent_dir, "raster_data", "UAV3-MS", output_dir=output_dir):
+            if check_dir(parent_dir, "raster_data", "UAV3-MS"):
                 for ortho_fn in os.listdir(os.path.join(parent_dir, "raster_data", "UAV3-MS")):
                     if ortho_fn[-4:]==".tif":
                         date = ortho_fn[:-4]
@@ -387,7 +388,7 @@ def one_plot(
         min_z, max_z = (221, 226)  # clip points in z that are noise
         if uav1_rgb:
             if is_generate_uav1_rgb:
-                if check_dir(parent_dir, "point_clouds", "UAV1-RGB", output_dir=output_dir):
+                if check_dir(parent_dir, "point_clouds", "UAV1-RGB"): 
                     for date in os.listdir(os.path.join(parent_dir, "point_clouds", "UAV1-RGB")):
                         pc_dir = os.path.join(parent_dir, "point_clouds", "UAV1-RGB", date)
                         os.makedirs(os.path.join(output_dir, f"plot{plot_id}"), exist_ok=True) # FIXME , date, "point_clouds", "UAV1-RGB"), exist_ok=True)
@@ -451,7 +452,7 @@ def one_plot(
                             
                             writer.write_points(point_record)
             else:  # just copy files over
-                if check_dir(parent_dir, "point_clouds", "UAV1-RGB", output_dir=output_dir):
+                if check_dir(parent_dir, "point_clouds", "UAV1-RGB"): 
                     parent_dir_uav1_rgb = os.path.join(parent_dir, "point_clouds", "UAV1-RGB", f"plot{plot_id}")
                     if os.path.isdir(parent_dir_uav1_rgb):
                         for date_pc in os.listdir(parent_dir_uav1_rgb):
@@ -463,7 +464,7 @@ def one_plot(
                             )
 
         if uav2_lidar:
-            if check_dir(parent_dir, "point_clouds", "UAV2-Lidar", output_dir=output_dir):
+            if check_dir(parent_dir, "point_clouds", "UAV2-Lidar"): 
                 for pc_fn in os.listdir(os.path.join(parent_dir, "point_clouds", "UAV2-Lidar")):
                     pc_fp = os.path.join(parent_dir, "point_clouds", "UAV2-Lidar", pc_fn)
                     date = pc_fn.split(".")[0]
@@ -494,7 +495,7 @@ def one_plot(
                     las.write(os.path.join(output_dir, f"plot{plot_id}", date, "point_clouds", "UAV2-Lidar", f"{date}.las"))
 
         if ugv_lmi:
-            if check_dir(parent_dir, "point_clouds", "UGV-LMI", output_dir=output_dir):
+            if check_dir(parent_dir, "point_clouds", "UGV-LMI"): 
                 parent_dir_ugvlmi = os.path.join(parent_dir, "point_clouds", "UGV-LMI", f"plot{plot_id}")
                 if os.path.isdir(parent_dir_ugvlmi):
                     for date_pc in os.listdir(parent_dir_ugvlmi):
@@ -506,7 +507,7 @@ def one_plot(
                         )
 
         if ugv_ouster:
-            if check_dir(parent_dir, "point_clouds", "UGV-Ouster", output_dir=output_dir):
+            if check_dir(parent_dir, "point_clouds", "UGV-Ouster"):
                 parent_dir_ugvlmi = os.path.join(parent_dir, "point_clouds", "UGV-Ouster", f"plot{plot_id}")
                 if os.path.isdir(parent_dir_ugvlmi):
                     # open ugv area shape 
